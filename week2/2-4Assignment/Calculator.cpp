@@ -1,9 +1,9 @@
 /*
  * Calculator.cpp
  *
- *  Date: [Enter date]
- *  Author: [Your Name]
- */
+ *  Date: July...
+ *  Author: Peter F. Tumulty
+ **/
 
 #include <iostream>
 
