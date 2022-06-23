@@ -1,5 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
+#include <cstring>
+#include <iomanip>
 using namespace std;
 
 string changeTimeToStr(unsigned int time) {
@@ -29,7 +31,7 @@ string formatTime12(unsigned int h, unsigned int m, unsigned int s) {
  
   /** covert military to standart time -- hour **/
   if(h > 12 && h <= 22){
-   int convert = 23 - h;
+   int convert = h - 12;
    hour = convert;
   }else if(h == 23) {
     hour = 11;
@@ -56,7 +58,7 @@ string formatTime24(unsigned int h, unsigned int m, unsigned int s) {
      hour = "00";
   } else if (h >= 10) {
     int milHour = 23 - h;
-    hour = to_string(milHour);
+    hour = to_string(h);
   } else {
     hour = "0" + to_string(h);
   }
@@ -97,20 +99,63 @@ string nCharString(size_t n, char c) {
 }
 
 void displayClock(unsigned int h, unsigned int m, unsigned int s) {
-   cout << nCharString(24, '*') << "   " << nCharString(24, '*'); 
-   cout << endl;
+   cout << nCharString(24, '*') << "   " << nCharString(24, '*') << endl;
    cout << "*    12-Hour Clock     *" << "   " << "*    24-Hour Clock     *";
    cout << endl;
-   cout << "*    " << formatTime12(), m, s) << "      *" << "   " << "*    " << formatTime24(h, m, s) << "          *";
+   cout << "*    " << formatTime12(h, m, s) << "      *" << "   " << "*    " << formatTime24(h, m, s) << "          *";
    cout << endl;
    cout << nCharString(24, '*') << "   " << nCharString(24, '*');
 }
 
+void printMenu() {
+      char *strings[4] = {{"Add One Hour"},{"Add One Minute"},{"Add One Second"},{"Exit Program"}};
+       cout << endl;
+       cout << endl;
+       cout << nCharString(26, '*') << endl;
+       for(int i = 0; i < 4; i++) {
+           cout << "* " << to_string(i + 1) << " - " << strings[i] << setw(20 - strlen(strings[i])) << "*" << endl;
+       }
+       
+       cout << nCharString(26, '*') << endl;
+}
+
 int main() {
-  system("clear");
+  
   int hour = 15;
   int minute = 22;
   int second = 1;
+  int option = 0;
+  bool start = true;
+  
+  system("clear");
   displayClock(hour, minute, second);
+  
+  while(start) {
+      printMenu();
+      cin >> option;
+      
+      switch(option) {
+          case 1:
+            hour = hour + 1;
+            displayClock(hour, minute, second);
+          break;
+          case 2:
+            minute = minute + 1;
+            displayClock(hour, minute, second);
+          break;
+          case 3:
+            second = second + 1;
+            displayClock(hour, minute, second);
+          break;
+          case 4:
+           start = false;
+          break;
+      }
+      
+      
+  }
+  
+  
+  
   return 0;
 }
