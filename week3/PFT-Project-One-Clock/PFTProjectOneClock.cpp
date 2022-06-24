@@ -123,7 +123,7 @@ void printMenu() {
 
 int main() {
   
-  int hour = 12;
+  int hour = 11;
   int minute = 59;
   int second = 59;
   int option = 0;
@@ -175,7 +175,7 @@ int main() {
                 }
                 
                 if(hour == 24) {
-                    minute = 0;
+                    hour = 0;
                     
                 } else {
                     hour = hour + 1;
