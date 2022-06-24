@@ -33,8 +33,10 @@ string formatTime12(unsigned int h, unsigned int m, unsigned int s) {
   if(h > 12 && h <= 22){
    int convert = h - 12;
    hour = convert;
-  }else if(h == 23) {
+  }else if (h == 23) {
     hour = 11;
+  } else if (h == 24) {
+      hour = 12;
   } else if(h == 0) {
     hour = 12;
   } else {
@@ -121,9 +123,9 @@ void printMenu() {
 
 int main() {
   
-  int hour = 15;
-  int minute = 22;
-  int second = 1;
+  int hour = 11;
+  int minute = 59;
+  int second = 59;
   int option = 0;
   bool start = true;
   
@@ -136,15 +138,52 @@ int main() {
       
       switch(option) {
           case 1:
-            hour = hour + 1;
+          
+            if(hour == 24) {
+                hour = 1;
+            } else {
+              hour = hour + 1;
+            }
             displayClock(hour, minute, second);
           break;
           case 2:
-            minute = minute + 1;
+            if(minute == 59) {
+                minute = 0;
+                
+                if(hour == 24) {
+                    hour = 1;
+                    
+                } else {
+                    hour = hour + 1;
+                    
+                }
+            } else {
+                minute = minute + 1;
+            }
             displayClock(hour, minute, second);
           break;
           case 3:
-            second = second + 1;
+            if(second == 59) {
+                second = 0;
+                
+                if(minute == 59) {
+                    minute = 0;
+                    
+                } else {
+                    minute = minute + 1;
+                    
+                }
+                
+                if(hour == 24) {
+                    hour = 0;
+                    
+                } else {
+                    hour = hour + 1;
+                    
+                }
+            } else {
+                second = second + 1;
+            }
             displayClock(hour, minute, second);
           break;
           case 4:
