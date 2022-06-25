@@ -1,7 +1,8 @@
 # Coffee Maker Psuedocode
 
  - Inside the main function we need to initialize the set time variable, current time variable, what button is being pressed, and how many times its being pressed
-   - ```
+
+```
      #include <ctime>
      
      int main () {
@@ -74,7 +75,7 @@
 
    ```
  - Outside the main function we initialize the brew coffee function.
-   - ```
+ ```
       void brewCoffee() {
         // Inside this function we have two sensors the water amount sensor and the heating sensor.
         // The heating sensor is a variable is a number set to 0 and the amount sensor is set to the number 0
