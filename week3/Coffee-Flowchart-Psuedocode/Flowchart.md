@@ -20,7 +20,7 @@
                // If the user changes the time and presses ON one more time that set time is saved.
                // Then the user is prompted to press PROGRAM and then the brew coffee function will run when the set time is equal to the current time.
             }
-          else if(buttonPress == "OFF") {
+          } else if(buttonPress == "OFF") {
             // delete saved set time
             // display current time to the user
      
