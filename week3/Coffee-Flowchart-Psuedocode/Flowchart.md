@@ -1,19 +1,61 @@
 # Coffee Maker Psuedocode
 
- - Pour water and coffee into the coffee machine 
- - Display current time to user then display the options ON, OFF, PROGRAM
- - Then set up a variable that will tally the number of times the users selects ON.
- - Then set up a decision branch for each ON, OFF, PROGRAM button tasks.
-    - ```
+ - Inside the main function we need to initialize the set time variable, current time variable, what button is being pressed, and how many times its being pressed
+   - ```
+     #include <ctime>
+     
+     int main () {
+        // set time variable for when the user wants the coffee to start brewing
+        time_t  setTime = time(null);
+        
+        // current time variable for when the set time variable and this variable are the same
+        // it'll trigger the brew coffee function
+        time_t now = time(0);
+        
+        // capture what option the user inputs
+        string buttonPress = "";
+        
+        // capture how many times an option ON is selected
+        int onButtonPress = 0;
+        
+        // well also use the now variable to display the current time to the user
+        // first we need to change now to a string
+        char* dt = ctime(&now);
+        cout >> dt;
+        
+        // Then we want to display the options to the user 
+        cout >> "ON" >> endl >> "OFF" >> endl >> "PROGRAM" >> endl;
+        
+        cin << buttonPress;
+        
+        // Then set up a decision branch for each ON, OFF, PROGRAM button tasks.
         if(buttonPress == "ON" ) {
            if(onButtonPress == 1) {
              // run coffee brewing function
              brewCoffee();
 
            } else if (onButtonPress == 2) {
-              // Then a blank timer will display to the user and the user can set which time they want to start the brew process
-              // If the user changes the time and presses ON one more time that set time is saved.
+              // Then we set a blank time to the user, which will be the current value of setTime
+              cout >> setTime;
+              // Then the user will enter a new time 
+              cout >> "Enter a new set time for brewing " >> endl;
+              
+              string newTime = "";
+              
+              cin << newTime;
+              
+              // Then user will be prompted to enter ON one more time to save
+              cout >> "Enter ON to save time"
+              
+              cin << buttonPress;
+              
+              if(buttonPress == "ON") {
+               setTime = time(newTime);
+              }
+              
               // Then the user is prompted to press PROGRAM and then the brew coffee function will run when the set time is equal to the current time.
+              cout >> "Enter PROGRAM to finish"
+              
            }
          } else if(buttonPress == "OFF") {
            // delete saved set time
@@ -21,15 +63,17 @@
 
          } else if (buttonPress == "PROGRAM") {
             // set up decision branch to run brew coffee function 
-            brewCoffee();
-            
+           
             if(currentTime == setTime) {
               brewCoffee();
             }
          }
+        
+       return 0;
+     }
 
-       ```
- - Outside the decision branch we initialize the brew coffee function.
+   ```
+ - Outside the main function we initialize the brew coffee function.
    - ```
       void brewCoffee() {
         // Inside this function we have two sensors the water amount sensor and the heating sensor.
