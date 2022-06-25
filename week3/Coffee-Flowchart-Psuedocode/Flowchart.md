@@ -7,9 +7,9 @@
    - If user presses ON once then the coffee brewing process will begin.
      - This will be a function because we will be reusing these cofee brewing steps through the program.
    - If the user presses ON twice
- --- Then a blank timer will display to the user and the user can set which time they want to start the brew process
- --- If the user changes the time and presses ON one more time that set time is saved.
- --- Then the user is prompted to press PROGRAM and then the brew coffee function will run when the set time is equal to the current time.
+     - Then a blank timer will display to the user and the user can set which time they want to start the brew process
+     - If the user changes the time and presses ON one more time that set time is saved.
+     - Then the user is prompted to press PROGRAM and then the brew coffee function will run when the set time is equal to the current time.
  -- There is also an else if statement for this branch if the user presses OFF.
  --- If the user presses OFF the the saved time is erased and the current time is displayed to the user.
  - Outside the decision branch we initialize the brew coffee function.
