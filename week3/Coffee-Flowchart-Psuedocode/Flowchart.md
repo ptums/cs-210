@@ -24,7 +24,7 @@
             brewCoffee();
             
             if(currentTime == setTime) {
-              brewCoffe();
+              brewCoffee();
             }
          }
 
@@ -53,11 +53,9 @@
             }
            
         }
-      }
-   ```
-   - ```
-     // Outside the while loop we set up another decision branch that'll execute if the brew variable is false.
-     if(brew == false) {
+        
+        // Outside the while loop we set up another decision branch that'll execute if the brew variable is false.
+        if(brew == false) {
      
        // Inside that decision branch we run while loop with the empty variable variable as the parameter.
        while(empty) {
@@ -77,5 +75,5 @@
        
        }
      }
-     
-     ```
+      }
+   ```
