@@ -4,7 +4,7 @@
  - Display current time to user then display the options ON, OFF, PROGRAM
  - Then set up a variable that will tally the number of times the users selects ON.
  - Then set up a decision branch for each ON button task.
- -- If user presses ON once then the coffee brewing process will begin.
+   - If user presses ON once then the coffee brewing process will begin.
  --- This will be a function because we will be reusing these cofee brewing steps through the program.
  -- If the user presses ON twice
  --- Then a blank timer will display to the user and the user can set which time they want to start the brew process
