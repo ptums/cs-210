@@ -3,15 +3,30 @@
  - Pour water and coffee into the coffee machine 
  - Display current time to user then display the options ON, OFF, PROGRAM
  - Then set up a variable that will tally the number of times the users selects ON.
- - Then set up a decision branch for each ON button task.
+ - Then set up a decision branch for each ON and OFF button task.
    - If user presses ON once then the coffee brewing process will begin.
-     - This will be a function because we will be reusing these cofee brewing steps through the program.
+     - This will be a function because we will be reusing these coffee brewing steps through the program.
    - If the user presses ON twice
-     - Then a blank timer will display to the user and the user can set which time they want to start the brew process
-     - If the user changes the time and presses ON one more time that set time is saved.
-     - Then the user is prompted to press PROGRAM and then the brew coffee function will run when the set time is equal to the current time.
- -- There is also an else if statement for this branch if the user presses OFF.
- --- If the user presses OFF the the saved time is erased and the current time is displayed to the user.
+     
+   - Else if statement for this branch if the user presses OFF.
+     - if the user presses OFF the the saved time is erased and the current time is displayed to the user.
+     - ```
+         if(buttonPress == "ON" ) {
+            if(onButtonPress == 1) {
+              // run coffee brewing function
+              
+            } else if (onButtonPress == 2) {
+               // Then a blank timer will display to the user and the user can set which time they want to start the brew process
+               // If the user changes the time and presses ON one more time that set time is saved.
+               // Then the user is prompted to press PROGRAM and then the brew coffee function will run when the set time is equal to the current time.
+            }
+          else if(buttonPress == "OFF") {
+            // delete saved set time
+            // display current time to the user
+     
+          } 
+          
+       ```
  - Outside the decision branch we initialize the brew coffee function.
    - Inside this function we have two sensors the water amount sensor and the heating sensor.
    - The heating sensor is a variable is a number set to 0 and the amount sensor is set to the number 0
