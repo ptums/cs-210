@@ -13,9 +13,10 @@
  -- There is also an else if statement for this branch if the user presses OFF.
  --- If the user presses OFF the the saved time is erased and the current time is displayed to the user.
  - Outside the decision branch we initialize the brew coffee function.
- -- Inside this function we have two sensors the water amount sensor and the heating sensor.
- -- The heating sensor is a variable is a number set to 0 and the amount sensor is set to the number 0
- -- Next we set up two more variables that will be set to booleans.
+   - Inside this function we have two sensors the water amount sensor and the heating sensor.
+   - The heating sensor is a variable is a number set to 0 and the amount sensor is set to the number 0
+   - ``bool heatingSensor = 0; bool amountSensor = 0;``
+   - Next we set up two more variables that will be set to booleans.
  -- The first variable is brew which is set to true and the secomd variable is empty which is set to false
  -- Then a while loop is called with brew as its parameter and the mechanism to boil the water starts.
  --- Every minute, the heating sensor variable increases by 1.
