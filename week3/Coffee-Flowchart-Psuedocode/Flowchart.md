@@ -20,7 +20,8 @@
    - The first variable is brew which is set to true and the secomd variable is empty which is set to false
    - ``bool brew = true; bool empty = false;``
    - Then a while loop is called with brew as its parameter and the mechanism to boil the water starts.
-   - ```while (brew) {
+   - ```
+      while (brew) {
         // increase the heating sensor by 1 every minute using ualarm https://pubs.opengroup.org/onlinepubs/007908799/xsh/ualarm.html
         heatingSenor = heatingSensor + 1;
         
@@ -29,7 +30,8 @@
          brew = false;
         }
 
-      }```
+      }
+      ```
  -- Outside the while loop we set up another decision branch that'll execute if the brew variable is false.
  --- Inside that decision branch we run while loop with the empty variable variable as the parameter.
  --- And inside the while loop we run the drain water into coffee grind basket mechanism.
