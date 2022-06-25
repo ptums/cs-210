@@ -113,6 +113,7 @@
             if(amountSensor <= 10) {
 
                 // run the drain water into coffee grind basket function
+                // I'd research using Raspberry Pi for this functionality
                 drainWaterIntoCofeeBasket();
             }else {
               empty = true;
