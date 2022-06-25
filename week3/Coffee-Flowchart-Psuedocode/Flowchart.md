@@ -57,23 +57,23 @@
         // Outside the while loop we set up another decision branch that'll execute if the brew variable is false.
         if(brew == false) {
      
-       // Inside that decision branch we run while loop with the empty variable variable as the parameter.
-       while(empty) {
-        
-         // Then we increase the amount sensor variable by 1 every minute. 
-         amountSensor = amountSensor + 1;
-         
-         // if amount sensor is less than ten run the drain water into coffee grind basket function
-         // once it the amount sensor is ten we set the empty variable to be true;
-         if(amountSensor <= 10) {
-             
-             // run the drain water into coffee grind basket function
-             drainWaterIntoCofeeBasket();
-         }else {
-           empty = true;
-         }
-       
-       }
-     }
+          // Inside that decision branch we run while loop with the empty variable variable as the parameter.
+          while(empty) {
+
+            // Then we increase the amount sensor variable by 1 every minute. 
+            amountSensor = amountSensor + 1;
+
+            // if amount sensor is less than ten run the drain water into coffee grind basket function
+            // once it the amount sensor is ten we set the empty variable to be true;
+            if(amountSensor <= 10) {
+
+                // run the drain water into coffee grind basket function
+                drainWaterIntoCofeeBasket();
+            }else {
+              empty = true;
+            }
+
+          }
+        }
       }
    ```
