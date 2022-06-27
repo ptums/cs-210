@@ -12,7 +12,15 @@ int main()
   cout << "Enter the item name: " << endl;
   cin >> name;
 
-  cout << "Name: " << name;
+  cout << "Enter the item price: " << endl;
+  cin >> price;
 
+  cout << "Enter the item quantity: " << endl;
+  cin >> quantity;
+  
+  cout << fixed << setprecision(2);
+  
+  cout << "Name: " << name << " " << "Price: " << price << " " << "Quantity: " << quantity;
+  ItemToPurchase(name, price, quantity);
   return 0;
 }

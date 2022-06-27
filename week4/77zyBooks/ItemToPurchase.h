@@ -1,22 +1,18 @@
 #include <iostream>
-
-
 using namespace std;
 
 class ItemToPurchase {
-  public:
-   ItemToPurchase();
-   ItemToPurchase(string name, double price, int quantity);
-   void setName(string name);
-   string getName();
-   void setPrice(double price);
-   double getPrice();
-   void setQuantity(int quantity);
-   int getQuantity();
-
-  private:
-   string itemName;
-   double itemPrice;
-   int itemQuantity;
-
+   public:
+      void SetName(string n);
+      void SetPrice(double p);
+      void SetQuantity(int q);
+      string GetName() const;
+      double GetPrice() const;
+      int GetQuantity() const;
+      ItemToPurchase();
+      ItemToPurchase(string name, double price, int quantity);
+   private:
+      int itemName;
+      int itemPrice;
+      int itemQuantity;
 };
