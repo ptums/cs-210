@@ -11,7 +11,6 @@ using namespace std;
 
 int main()
 {
-	char statement[100];
 	int op1, op2;
 	char operation;
 	char answer='y';
@@ -26,10 +25,10 @@ int main()
 			cout << op1 << " - " << op2 << " = " << op1 - op2 << endl;
     }
 		if (operation == '*'){
-			cout << op1 << " / " << op2 << " = " << op1 * op2 << endl;
+			cout << op1 << " * " << op2 << " = " << op1 * op2 << endl;
     }
 		if (operation == '/') {
-			cout << op1 << " * " << op2 << " = " << op1 / op2 << endl;
+			cout << op1 << " / " << op2 << " = " << op1 / op2 << endl;
     }
 		cout << "Do you wish to evaluate another expression? " << endl;
 		cin >> answer;
