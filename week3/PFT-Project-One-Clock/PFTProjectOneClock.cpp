@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <cstring>
 #include <iomanip>
+
 using namespace std;
 
 string changeTimeToStr(unsigned int time) {
@@ -61,8 +62,10 @@ string formatTime24(unsigned int h, unsigned int m, unsigned int s) {
   } else if (h >= 10) {
     int milHour = 23 - h;
     hour = to_string(h);
+    
   } else {
     hour = "0" + to_string(h);
+
   }
 
   if (m == 59) {
@@ -177,7 +180,7 @@ int main() {
                 if(hour == 24) {
                     hour = 0;
                     
-                } else {
+                } else if(minute == 0) {
                     hour = hour + 1;
                     
                 }
