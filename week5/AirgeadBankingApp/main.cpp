@@ -54,13 +54,13 @@ int main()
 
    printMessageHeader();
 
+   system("pause");
+
    cin >> initialInvestment;
    cin >> monthlyDeposit;
    cin >> annualInterest;
    cin >> numberOfYears;
 
-   
-   
    investment.SetInitialInvestment(initialInvestment);
    investment.SetMonthlyDeposit(monthlyDeposit);
    investment.SetAnnualInterest(annualInterest);
