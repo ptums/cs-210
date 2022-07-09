@@ -1,6 +1,7 @@
+
 #include <iostream>
 #include <iomanip>
-#include "InterestCalculator.h"
+#include "CurrentInvestment.h"
 
 using namespace std;
 
@@ -45,6 +46,7 @@ void printMessageHeader(float i = 0, float m = 0, int a = 0, int n = 0) {
 
 int main()
 {
+   CurrentInvestment investment;
    float initialInvestment;
    float monthlyDeposit;
    int annualInterest;
@@ -57,15 +59,20 @@ int main()
    cin >> annualInterest;
    cin >> numberOfYears;
 
-   system("PAUSE");
-
-   printMessageHeader(initialInvestment, monthlyDeposit, annualInterest, numberOfYears);
-
-
-
-
-
-
+   
+   
+   investment.SetInitialInvestment(initialInvestment);
+   investment.SetMonthlyDeposit(monthlyDeposit);
+   investment.SetAnnualInterest(annualInterest);
+   investment.SetNumberOfYears(numberOfYears);
+   
+   float getInitialInvesment = investment.GetInitialInvestment();
+   float getMonthlyDeposit = investment.GetMonthlyDeposit();
+   int getAnnualInterest = investment.GetAnnualInterest();
+   int getNumberOfYears = investment.GetNumberOfYears();
+   
+   printMessageHeader(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears);
+   
 
    return 0;
 }
