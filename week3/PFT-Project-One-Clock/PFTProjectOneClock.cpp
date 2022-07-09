@@ -1,3 +1,10 @@
+/**
+ * 
+ * Peter F. Tumulty
+ * 3-1 Project One  
+ * July 2, 2022
+ *
+ * **/
 #include <iostream>
 #include <stdlib.h>
 #include <cstring>
