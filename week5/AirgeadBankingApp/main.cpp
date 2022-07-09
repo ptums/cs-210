@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void printMessageHeader(float i = 0, float m = 0, int a = 0, int n = 0) {
+void printHeaderMessage(float i = 0, float m = 0, int a = 0, int n = 0) {
    cout << fixed << setprecision(2);
    cout << "********************************" << endl;
    cout << "********** Data Input **********" << endl;
@@ -44,6 +44,14 @@ void printMessageHeader(float i = 0, float m = 0, int a = 0, int n = 0) {
    
 }
 
+void printContinueMessage() {
+   
+   cout << "Press any key to continue . . ." << endl;
+   cin.ignore();
+   cin.get();
+ 
+}
+
 int main()
 {
    CurrentInvestment investment;
@@ -52,9 +60,8 @@ int main()
    int annualInterest;
    int numberOfYears;
 
-   printMessageHeader();
-
-   system("pause");
+   printHeaderMessage();
+   printContinueMessage();
 
    cin >> initialInvestment;
    cin >> monthlyDeposit;
@@ -71,7 +78,8 @@ int main()
    int getAnnualInterest = investment.GetAnnualInterest();
    int getNumberOfYears = investment.GetNumberOfYears();
    
-   printMessageHeader(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears);
+   printHeaderMessage(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears);
+   printContinueMessage();
    
 
    return 0;
