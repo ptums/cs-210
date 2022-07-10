@@ -3,7 +3,7 @@
 #include "CurrentInvestment.h"
 #include "PrintHeaderMessage.cpp"
 #include "PrintContinueMessage.cpp"
-#include "MonthlyBalance.cpp"
+#include "AnnualBalance.cpp"
 
 using namespace std;
 
@@ -34,9 +34,9 @@ int main()
    
    printHeaderMessage(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears);
    printContinueMessage();
-   monthlyBalance(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears, false);
+   annualBalance(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears, false);
    printContinueMessage();
-   monthlyBalance(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears, true);
+   annualBalance(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears, true);
 
    return 0;
 }

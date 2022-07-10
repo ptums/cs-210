@@ -13,7 +13,7 @@ void header(bool s) {
       cout << "Without ";
    }
 
-   cout << "Additional Monthly Desposits" << endl;
+   cout << "Additional Monthly Deposits" << endl;
 
    cout << nCharString(63, '-') << endl;
 
@@ -27,11 +27,11 @@ void header(bool s) {
 }
 
    
-void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualInterest, int numberOfYears, bool showMonthlyDeposit) {
+void annualBalance(float initialInvestment, float monthlyDeposit, float annualInterest, int numberOfYears, bool showMonthlyDeposit) {
    header(showMonthlyDeposit);
    float interest;
    float balance = initialInvestment;
-   float monthEnd = 0;
+   float yearEnd = 0;
 
    for(int i = 0; i < numberOfYears; i++) {
       cout << setw(7);
@@ -41,7 +41,7 @@ void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualI
       if(showMonthlyDeposit) {
          for(int j = 0; j < 12; j++){            
             interest = (balance + monthlyDeposit) * ((annualInterest / 100) / 12);
-            monthEnd = monthEnd + interest;
+            yearEnd = yearEnd + interest;
             balance = balance + monthlyDeposit + interest;
          }
 
@@ -54,14 +54,14 @@ void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualI
 
      if(showMonthlyDeposit) {
         if(i == 0) {
-           cout << setw(23);
+           cout << setw(21);
         }else {
-           cout << setw(22);
+           cout << setw(20);
         }
-      cout << "$" << monthEnd;
+      cout << "$" << yearEnd;
 
      } else {
-        cout << setw(25);
+        cout << setw(23);
         cout << "$" << interest;
      }
 
