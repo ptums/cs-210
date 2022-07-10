@@ -34,9 +34,9 @@ void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualI
    float monthEnd = 0;
 
    for(int i = 0; i < numberOfYears; i++) {
-      cout << setw(5);
+      cout << setw(7);
       cout << i + 1;
-      cout << setw(15);
+      cout << setw(19);
 
       if(showMonthlyDeposit) {
          for(int j = 0; j < 12; j++){            
@@ -53,11 +53,15 @@ void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualI
      cout << "$" << balance;
 
      if(showMonthlyDeposit) {
-      cout << setw(12);
+        if(i == 0) {
+           cout << setw(23);
+        }else {
+           cout << setw(22);
+        }
       cout << "$" << monthEnd;
 
      } else {
-        cout << setw(13);
+        cout << setw(25);
         cout << "$" << interest;
      }
 
