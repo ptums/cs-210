@@ -9,7 +9,7 @@ ItemToPurchase::ItemToPurchase() {
   itemQuantity = 0;
  }
 
-ItemToPurchase::ItemToPurchase(string name, double price, int quantity) {
+void ItemToPurchase::ItemToPurchase(string name, double price, int quantity) {
   itemName = name;
   itemPrice = price;
   itemQuantity = quantity;
