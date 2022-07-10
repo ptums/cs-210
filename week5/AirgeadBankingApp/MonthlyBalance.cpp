@@ -50,15 +50,15 @@ void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualI
          balance = balance + interest;
       }
      
-     cout << balance;
+     cout << "$" << balance;
 
      if(showMonthlyDeposit) {
-      cout << setw(22);
-      cout << monthEnd;
+      cout << setw(12);
+      cout << "$" << monthEnd;
 
      } else {
-        cout << setw(20);
-        cout << interest;
+        cout << setw(13);
+        cout << "$" << interest;
      }
 
      cout << endl;
