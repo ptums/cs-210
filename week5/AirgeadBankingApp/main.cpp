@@ -12,7 +12,7 @@ int main()
    CurrentInvestment investment;
    float initialInvestment;
    float monthlyDeposit;
-   int annualInterest;
+   float annualInterest;
    int numberOfYears;
 
 
@@ -28,14 +28,14 @@ int main()
    
    float getInitialInvesment = investment.GetInitialInvestment();
    float getMonthlyDeposit = investment.GetMonthlyDeposit();
-   int getAnnualInterest = investment.GetAnnualInterest();
+   float getAnnualInterest = investment.GetAnnualInterest();
    int getNumberOfYears = investment.GetNumberOfYears();
    
    printHeaderMessage(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears);
    printContinueMessage();
-   monthlyBalance(false);
+   monthlyBalance(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears, false);
    printContinueMessage();
-   monthlyBalance(true);
+   monthlyBalance(getInitialInvesment, getMonthlyDeposit, getAnnualInterest, getNumberOfYears, true);
 
    return 0;
 }

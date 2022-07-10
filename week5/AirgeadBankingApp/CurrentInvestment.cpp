@@ -35,7 +35,7 @@ float CurrentInvestment::GetMonthlyDeposit() const {
   return monthlyDeposit; 
 }
 
-int CurrentInvestment::GetAnnualInterest() const {
+float CurrentInvestment::GetAnnualInterest() const {
    return annualInterest;
 }
 

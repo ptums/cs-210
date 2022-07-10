@@ -12,14 +12,14 @@ class CurrentInvestment {
       void SetNumberOfYears(int n);
       float GetInitialInvestment() const;
       float GetMonthlyDeposit() const;
-      int GetAnnualInterest() const;
+      float GetAnnualInterest() const;
       int GetNumberOfYears() const;
       CurrentInvestment();
 
    private:
       float initialInvestment;
       float monthlyDeposit;
-      int annualInterest;
+      float annualInterest;
       int numberOfYears;
 };
 
