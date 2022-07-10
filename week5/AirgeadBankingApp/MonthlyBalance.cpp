@@ -39,9 +39,11 @@ void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualI
       cout << setw(15);
 
       if(showMonthlyDeposit) {
-         interest = (balance + monthlyDeposit) * ((annualInterest / 100) / 12);
-         monthEnd = monthEnd + interest;
-         balance = balance + monthlyDeposit + interest;
+         for(int j = 0; j < 12; j++){            
+            interest = (balance + monthlyDeposit) * ((annualInterest / 100) / 12);
+            monthEnd = monthEnd + interest;
+            balance = balance + monthlyDeposit + interest;
+         }
 
       }else {
          interest = (balance) * ((annualInterest / 100));
@@ -49,12 +51,13 @@ void monthlyBalance(float initialInvestment, float monthlyDeposit, float annualI
       }
      
      cout << balance;
-     cout << setw(20);
 
      if(showMonthlyDeposit) {
+      cout << setw(22);
       cout << monthEnd;
 
      } else {
+        cout << setw(20);
         cout << interest;
      }
 

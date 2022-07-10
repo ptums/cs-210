@@ -15,6 +15,7 @@ int main()
    float annualInterest;
    int numberOfYears;
 
+   printHeaderMessage();
 
    cin >> initialInvestment;
    cin >> monthlyDeposit;
