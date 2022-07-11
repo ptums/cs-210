@@ -1,9 +1,6 @@
 #ifndef CURRENT_INVESTMENT_H
 #define CURRENT_INVESTMENT_H
 
-#include <iostream>
-using namespace std;
-
 class CurrentInvestment {
    public:
       void SetInitialInvestment(float i);

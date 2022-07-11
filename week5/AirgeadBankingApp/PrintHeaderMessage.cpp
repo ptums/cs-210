@@ -1,13 +1,12 @@
 #include <iostream>
 #include <iomanip>
-#include "CharToString.cpp"
 
 using namespace std;
 
 void printHeaderMessage(float i = 0, float m = 0, int a = 0, int n = 0) {
    cout << fixed << setprecision(2);
-   cout << nCharString(29, '*') << endl; 
-   cout << nCharString(9, '*') << " Data Input " << nCharString(8, '*') << endl;
+   cout << charToString(29, '*') << endl; 
+   cout << charToString(9, '*') << " Data Input " << charToString(8, '*') << endl;
    cout << "Initial Investment Amount: ";
 
    if(i > 0) {

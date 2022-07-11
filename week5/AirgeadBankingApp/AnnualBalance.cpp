@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 void header(bool s) {
    cout << setw(25);
    cout << "Balance and Interest ";
@@ -16,14 +15,14 @@ void header(bool s) {
 
    cout << "Additional Monthly Deposits" << endl;
 
-   cout << nCharString(63, '-') << endl;
+   cout << charToString(63, '-') << endl;
 
    cout << setw(15);
    cout << "Year       ";
    cout << "Year End Balance     ";
    cout << "Year End Earned Interest";
    cout << endl;
-   cout << nCharString(63, '=') << endl;
+   cout << charToString(63, '=') << endl;
 
 }
 
