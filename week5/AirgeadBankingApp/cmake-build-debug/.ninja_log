@@ -1,0 +1,11 @@
+# ninja log v5
+1	373	1657665325448450657	CMakeFiles/AirgeadBankingApp.dir/CurrentInvestment.cpp.o	766b20a4ba6cc1cf
+2	418	1657665325494848450	CMakeFiles/AirgeadBankingApp.dir/PrintContinueMessage.cpp.o	8f43958808e3605c
+1	286	1657665541463498431	CMakeFiles/AirgeadBankingApp.dir/CharToString.cpp.o	2fb508d23ea77819
+1	310	1657665880272913750	CMakeFiles/AirgeadBankingApp.dir/main.cpp.o	604b190009a51f05
+1	306	1657665880268564995	CMakeFiles/AirgeadBankingApp.dir/AnnualBalance.cpp.o	3115e4da93e8b4f8
+1	322	1657665584275517495	CMakeFiles/AirgeadBankingApp.dir/PrintHeaderMessage.cpp.o	385b34e291738ae4
+1	308	1657666399588322216	CMakeFiles/AirgeadBankingApp.dir/main.cpp.o	604b190009a51f05
+1	321	1657666399601133611	CMakeFiles/AirgeadBankingApp.dir/AnnualBalance.cpp.o	3115e4da93e8b4f8
+1	322	1657666399601133861	CMakeFiles/AirgeadBankingApp.dir/PrintHeaderMessage.cpp.o	385b34e291738ae4
+322	352	1657666399633941523	AirgeadBankingApp	14cd0c21daa6a12b

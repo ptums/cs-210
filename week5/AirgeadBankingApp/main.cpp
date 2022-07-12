@@ -1,10 +1,9 @@
 
 #include <iostream>
 #include "CurrentInvestment.h"
-#include "CharToString.h"
-#include "PrintHeaderMessage.cpp"
-#include "PrintContinueMessage.cpp"
-#include "AnnualBalance.cpp"
+#include "PrintHeaderMessage.h"
+#include "PrintContinueMessage.h"
+#include "AnnualBalance.h"
 
 using namespace std;
 

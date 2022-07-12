@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/petertumulty/Sites/education/snhu/cs-210/week5/AirgeadBankingApp -B /Users/petertumulty/Sites/education/snhu/cs-210/week5/AirgeadBankingApp/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/petertumulty/Sites/education/snhu/cs-210/week5/AirgeadBankingApp/cmake-build-debug

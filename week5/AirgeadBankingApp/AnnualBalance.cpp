@@ -1,37 +1,32 @@
 #include <iostream>
 #include <iomanip>
+#include "CharToString.h"
 
 using namespace std;
 
-void header(bool s) {
-   cout << setw(25);
-   cout << "Balance and Interest ";
-
-   if(s) {
-      cout << "With ";
-   }else {
-      cout << "Without ";
-   }
-
-   cout << "Additional Monthly Deposits" << endl;
-
-   cout << charToString(63, '-') << endl;
-
-   cout << setw(15);
-   cout << "Year       ";
-   cout << "Year End Balance     ";
-   cout << "Year End Earned Interest";
-   cout << endl;
-   cout << charToString(63, '=') << endl;
-
-}
-
-   
 void annualBalance(float initialInvestment, float monthlyDeposit, float annualInterest, int numberOfYears, bool showMonthlyDeposit) {
-   header(showMonthlyDeposit);
-   float interest;
+    float interest;
    float balance = initialInvestment;
    float yearEnd = 0;
+    cout << setw(25);
+    cout << "Balance and Interest ";
+
+    if(showMonthlyDeposit) {
+        cout << "With ";
+    }else {
+        cout << "Without ";
+    }
+
+    cout << "Additional Monthly Deposits" << endl;
+
+    cout << charToString(63, '-') << endl;
+
+    cout << setw(15);
+    cout << "Year       ";
+    cout << "Year End Balance     ";
+    cout << "Year End Earned Interest";
+    cout << endl;
+    cout << charToString(63, '=') << endl;
 
    for(int i = 0; i < numberOfYears; i++) {
       cout << setw(7);

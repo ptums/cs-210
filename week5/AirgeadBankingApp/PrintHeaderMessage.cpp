@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include "CharToString.h"
 
 using namespace std;
 
