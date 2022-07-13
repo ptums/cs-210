@@ -29,3 +29,14 @@ add_custom_command(
         -E copy_directory
         ${CMAKE_SOURCE_DIR}/python_modules/ ${OUTPUT_DIR}/python_modules
 )
+
+if(${MAKE_SYSTEM_NAME} MATCHES "Windows")
+    add_custom_command(
+            TARGET
+            ${PROJECT_NAME}
+            PRE_BUILD
+            COMMAND
+            ${CMAKE_COMMAND} -E copy
+            ${Python3_RUNTIME_LIBRARY_DIRS}/python${Python3_VERSION_MAJOR}${Python3_VERSION_MINOR}.dll ${OUTPUT_DIR}
+    )
+endif()
