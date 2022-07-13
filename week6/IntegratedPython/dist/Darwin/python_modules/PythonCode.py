@@ -2,7 +2,7 @@ import re
 import string
 
 
-def squareValue(v):
+def doubleNum(v):
     return v * 2
 
 

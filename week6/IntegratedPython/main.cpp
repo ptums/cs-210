@@ -162,25 +162,38 @@ void displayMenu()
 
 int main()
 {
-    int menuSelection, multiplyNum, doubleNum;
+    int menuSelection, multiplyTableNum, doubleNum;
+    bool start = true;
 
-    displayMenu();
-    cin >> menuSelection;
+    while(start) {
+        displayMenu();
+        cin >> menuSelection;
 
-    switch (menuSelection) {
-        case 1:
-            // Enter a number to multiple
-            cout << callIntFunc("squareValue", userInput);
-            break;
-        case 2:
-            // Enter a number to double
-            cout << callIntFunc("doubleValue", userInput);
-            break;
-        case 3:
-            system("clear");
-            cout << "Goodbye!" << endl;
-            break;
+        switch (menuSelection) {
+            case 1:
+                // Enter a number to multiple
+                cout << "Enter a number to create a multiplication table: " << endl;
+                cin >> multiplyTableNum;
+                cout << callIntFunc("doubleNum", multiplyTableNum) << endl;
+                cout << endl;
+                break;
+            case 2:
+                // Enter a number to double
+                cout << "Enter a number to double: " << endl;
+                cin >> doubleNum;
+                cout << callIntFunc("doubleNum", doubleNum) << endl;
+                cout << endl;
+                break;
+            case 3:
+                system("clear");
+                start = false;
+                cout << "Goodbye!" << endl;
+                break;
+        }
+
     }
+
+
 
     return 0;
 }
