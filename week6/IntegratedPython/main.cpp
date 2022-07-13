@@ -162,12 +162,25 @@ void displayMenu()
 
 int main()
 {
-    int userInput;
+    int menuSelection, multiplyNum, doubleNum;
 
     displayMenu();
-    cin >> userInput;
+    cin >> menuSelection;
 
-    cout << callIntFunc("squareValue", userInput);
+    switch (menuSelection) {
+        case 1:
+            // Enter a number to multiple
+            cout << callIntFunc("squareValue", userInput);
+            break;
+        case 2:
+            // Enter a number to double
+            cout << callIntFunc("doubleValue", userInput);
+            break;
+        case 3:
+            system("clear");
+            cout << "Goodbye!" << endl;
+            break;
+    }
 
     return 0;
 }
