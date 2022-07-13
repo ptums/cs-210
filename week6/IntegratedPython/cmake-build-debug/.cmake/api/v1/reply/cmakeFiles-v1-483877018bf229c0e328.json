@@ -170,8 +170,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug",
-		"source" : "/Users/petertumulty/CLionProjects/IntegratedPython"
+		"build" : "/Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug",
+		"source" : "/Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython"
 	},
 	"version" : 
 	{

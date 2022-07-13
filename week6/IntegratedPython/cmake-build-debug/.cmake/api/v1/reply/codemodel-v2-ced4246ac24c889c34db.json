@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "IntegratedPython::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-IntegratedPython-Debug-8702f226ab8cbbe6ebcf.json",
+					"jsonFile" : "target-IntegratedPython-Debug-36609e9a0c5e5b1fdc0e.json",
 					"name" : "IntegratedPython",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug",
-		"source" : "/Users/petertumulty/CLionProjects/IntegratedPython"
+		"build" : "/Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug",
+		"source" : "/Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython"
 	},
 	"version" : 
 	{

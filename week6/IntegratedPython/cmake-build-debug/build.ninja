@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug/
+cmake_ninja_workdir = /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target IntegratedPython
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = /Users/petertumulty/CLionProjects/IntegratedPython/cmake-b
 
 build cmake_object_order_depends_target_IntegratedPython: phony || CMakeFiles/IntegratedPython.dir
 
-build CMakeFiles/IntegratedPython.dir/main.cpp.o: CXX_COMPILER__IntegratedPython_Debug /Users/petertumulty/CLionProjects/IntegratedPython/main.cpp || cmake_object_order_depends_target_IntegratedPython
+build CMakeFiles/IntegratedPython.dir/main.cpp.o: CXX_COMPILER__IntegratedPython_Debug /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/main.cpp || cmake_object_order_depends_target_IntegratedPython
   DEP_FILE = CMakeFiles/IntegratedPython.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2a
   INCLUDES = -I/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/include/python3.9
@@ -69,7 +69,7 @@ build ../dist/Darwin/IntegratedPython: CXX_EXECUTABLE_LINKER__IntegratedPython_D
   LINK_LIBRARIES = /opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
   OBJECT_DIR = CMakeFiles/IntegratedPython.dir
   POST_BUILD = :
-  PRE_LINK = cd /Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E copy_directory /Users/petertumulty/CLionProjects/IntegratedPython/python_modules/ /Users/petertumulty/CLionProjects/IntegratedPython/dist/Darwin/python_modules && cd /Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug
+  PRE_LINK = cd /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E copy_directory /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/python_modules/ /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/dist/Darwin/python_modules && cd /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug
   TARGET_FILE = ../dist/Darwin/IntegratedPython
   TARGET_PDB = IntegratedPython.dbg
 
@@ -78,7 +78,7 @@ build ../dist/Darwin/IntegratedPython: CXX_EXECUTABLE_LINKER__IntegratedPython_D
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -89,7 +89,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/petertumulty/CLionProjects/IntegratedPython -B/Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug
+  COMMAND = cd /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython -B/Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +107,7 @@ build IntegratedPython: phony ../dist/Darwin/IntegratedPython
 # =============================================================================
 
 #############################################
-# Folder: /Users/petertumulty/CLionProjects/IntegratedPython/cmake-build-debug
+# Folder: /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-debug
 
 build all: phony ../dist/Darwin/IntegratedPython
 

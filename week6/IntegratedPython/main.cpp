@@ -58,9 +58,13 @@ int callIntFunc(string proc, string param)
     // Initialize the Python Interpreter
     Py_Initialize();
     // Build the name object
+    PyRun_SimpleString("import sys");
+    PyRun_SimpleString("import os");
+    PyRun_SimpleString("sys.path.append(os.getcwd())");
 
 
-    pName = PyUnicode_FromString((char*)"PythonCode");
+
+    pName = PyUnicode_FromString((char*)"python_modules.PythonCode");
     // Load the module object
     pModule = PyImport_Import(pName);
     // pDict is a borrowed reference
@@ -111,7 +115,11 @@ int callIntFunc(string proc, int param)
     // Initialize the Python Interpreter
     Py_Initialize();
     // Build the name object
-    pName = PyUnicode_FromString((char*)"PythonCode");
+    PyRun_SimpleString("import sys");
+    PyRun_SimpleString("import os");
+    PyRun_SimpleString("sys.path.append(os.getcwd())");
+
+    pName = PyUnicode_FromString((char*)"python_modules.PythonCode");
     // Load the module object
     pModule = PyImport_Import(pName);
     // pDict is a borrowed reference
