@@ -1,0 +1,17 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython -B /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-release
+-- The C compiler identification is AppleClang 13.1.6.13160021
+-- The CXX compiler identification is AppleClang 13.1.6.13160021
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.9/bin/python3.9 (found version "3.9.13") found components: Interpreter Development Development.Module Development.Embed 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/petertumulty/Sites/education/snhu/cs-210/week6/IntegratedPython/cmake-build-release

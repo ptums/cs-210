@@ -152,11 +152,22 @@ int callIntFunc(string proc, int param)
 }
 
 
+void displayMenu()
+{
+    cout << "1: Display a Multiplication Table" << endl;
+    cout << "2: Double a Value" << endl;
+    cout << "3: Exit" << endl;
+    cout << "Enter your selection as a number 1, 2, or 3." << endl;
+}
+
 int main()
 {
-    CallProcedure("printsomething");
-    cout << callIntFunc("PrintMe","House") << endl;
-    cout << callIntFunc("SquareValue", 2);
+    int userInput;
+
+    displayMenu();
+    cin >> userInput;
+
+    cout << callIntFunc("squareValue", userInput);
 
     return 0;
 }
