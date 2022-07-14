@@ -2,11 +2,12 @@ import re
 import string
 
 
-def doubleNum(v):
+def double_num(v):
     return v * 2
 
-def createMultiplicationTabe(num):
-    return True
 
-
-
+def create_multiplication_table(num):
+    for n in range(1, 11):
+        m = n * num
+        message = "{} x {} = {}".format(n, num, m)
+        print(message)

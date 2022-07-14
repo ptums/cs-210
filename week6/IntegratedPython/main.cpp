@@ -169,19 +169,24 @@ int main()
         displayMenu();
         cin >> menuSelection;
 
+        if(menuSelection < 0 || menuSelection > 3) {
+            cout << "The number you've selected is not an option. Please try again." << endl;
+            cout << endl;
+        }
+
         switch (menuSelection) {
             case 1:
                 // Enter a number to multiple
                 cout << "Enter a number to create a multiplication table: " << endl;
                 cin >> multiplyTableNum;
-                cout << callIntFunc("doubleNum", multiplyTableNum) << endl;
+                cout << callIntFunc("create_multiplication_table", multiplyTableNum);
                 cout << endl;
                 break;
             case 2:
                 // Enter a number to double
                 cout << "Enter a number to double: " << endl;
                 cin >> doubleNum;
-                cout << callIntFunc("doubleNum", doubleNum) << endl;
+                cout << callIntFunc("double_num", doubleNum) << endl;
                 cout << endl;
                 break;
             case 3:
