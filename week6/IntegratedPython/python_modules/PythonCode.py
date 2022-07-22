@@ -7,7 +7,7 @@ def double_num(v):
 
 
 def create_multiplication_table(num):
-    for n in range(1, 11):
-        m = n * num
-        message = "{} x {} = {}".format(n, num, m)
-        print(message)
+    for x in range(1, 11):
+        multiple = "{} X {} = {}".format(num, x, (num * x))
+        print(multiple)
+    return True

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include "DisplayMenu.h"
 
 using namespace std;
 
@@ -151,45 +152,44 @@ int callIntFunc(string proc, int param)
     return _PyLong_AsInt(presult);
 }
 
-
-void displayMenu()
-{
-    cout << "1: Display a Multiplication Table" << endl;
-    cout << "2: Double a Value" << endl;
-    cout << "3: Exit" << endl;
-    cout << "Enter your selection as a number 1, 2, or 3." << endl;
-}
-
 int main()
 {
-    int menuSelection, multiplyTableNum, doubleNum;
+//    callIntFunc("PrintMe", "Tuna!");
     bool start = true;
+    int userChoice;
+    string findItem;
+
 
     while(start) {
         displayMenu();
-        cin >> menuSelection;
+        cin >> userChoice;
 
-        if(menuSelection < 0 || menuSelection > 3) {
+        if(userChoice < 0 || userChoice > 4) {
             cout << "The number you've selected is not an option. Please try again." << endl;
             cout << endl;
         }
 
-        switch (menuSelection) {
+        switch (userChoice) {
             case 1:
-                // Enter a number to multiple
-                cout << "Enter a number to create a multiplication table: " << endl;
-                cin >> multiplyTableNum;
-                callIntFunc("create_multiplication_table", multiplyTableNum);
+                cout << "All items purchased & number of times each item was purchased" << endl;
                 cout << endl;
+                CallProcedure("ReadItemsPurchased");
+
+                cout << endl;
+
                 break;
             case 2:
-                // Enter a number to double
-                cout << "Enter a number to double: " << endl;
-                cin >> doubleNum;
-                cout << callIntFunc("double_num", doubleNum);
+                cout << "Total amount purchased of a specific item" << endl;
+                cout << "Enter the name of a product: " << endl;
+                cin >> findItem;
+                cout << endl;
+                cout << callIntFunc("find_item", findItem) << endl;
                 cout << endl;
                 break;
             case 3:
+                cout << "Display text histogram" << endl;
+                break;
+            case 4:
                 system("clear");
                 start = false;
                 cout << "Goodbye!" << endl;
@@ -197,7 +197,6 @@ int main()
         }
 
     }
-
 
 
     return 0;
