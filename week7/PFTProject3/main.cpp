@@ -264,7 +264,6 @@ int main()
                 cout << "All items purchased & number of times each item was purchased" << endl;
                 cout << endl;
                 CallProcedure("ReadItemsPurchased");
-
                 cout << endl;
 
                 break;
@@ -273,11 +272,13 @@ int main()
                 cout << "Enter the name of a product: " << endl;
                 cin >> findItem;
                 cout << endl;
-                cout << callIntFunc("find_item", findItem) << endl;
+                callIntFunc("FindItem", findItem);
                 cout << endl;
                 break;
             case 3:
                 cout << "Display text histogram" << endl;
+                CallProcedure("CreateHistogram");
+                CallProcedure("ReadHistogram");
                 break;
             case 4:
                 system("clear");
